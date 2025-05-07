@@ -1,0 +1,167 @@
+:root {
+    --cream-frosting: #FFF8E7;
+    --coffee-brown: #6F4E37;
+    --caramel-drizzle: #D2A679;
+    --chocolate-ganache: #3E2723;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--cream-frosting);
+    color: var(--coffee-brown);
+  }
+  
+  header {
+    background-color: var(--chocolate-ganache);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--caramel-drizzle);
+    color: white;
+  }
+  
+  .hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+  }
+  
+  .full-menu,
+  .gallery,
+  .testimonials,
+  .about-us {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: var(--chocolate-ganache);
+    margin-bottom: 2rem;
+  }
+  
+  .menu-grid,
+  .gallery-grid,
+  .testimonial-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 1rem;
+  }
+  
+  .item,
+  .testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(111, 78, 55, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .item:hover,
+  .testimonial:hover {
+    transform: translateY(-5px);
+  }
+  
+  .item img,
+  .gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: var(--caramel-drizzle);
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonial span {
+    font-weight: bold;
+    display: block;
+    color: var(--coffee-brown);
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--coffee-brown);
+  }
+  
+  footer {
+    background-color: var(--chocolate-ganache);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .social-links {
+    margin: 1rem 0;
+  }
+  
+  .social-links a {
+    margin: 0 0.5rem;
+    color: var(--caramel-drizzle);
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .offer-banner {
+    background-color: var(--caramel-drizzle);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    font-weight: bold;
+  }
+  
+  .close-banner {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  
